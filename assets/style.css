@@ -635,3 +635,17 @@ a.ocard:hover img{transform:scale(1.04)}
 @media(min-width:900px){.totop{bottom:24px}}
 .polaroid img{height:auto}
 .bp-script{font-style:normal}
+
+/* booking form (Delmarva-style) */
+.bk-wrap{max-width:640px}
+.bk-h{font-family:"Fredoka",var(--head);font-weight:700;text-transform:uppercase;color:var(--bo,#E2512B);font-size:clamp(40px,8vw,72px);line-height:1;letter-spacing:0}
+.bk-sub{font-size:clamp(17px,2.4vw,22px);font-weight:700;margin:8px 0 22px;color:#14110F}
+.bk-form{display:grid;gap:6px}
+.bk-form label{font:700 15px/1.3 var(--sans);color:#14110F;margin:10px 0 2px}
+.bk-form label i{font-style:normal}
+.bk-form label em{font-weight:400;font-style:normal;color:var(--muted)}
+.bk-form input,.bk-form textarea{width:100%;min-height:48px;padding:10px 14px;border:2px solid #14110F;border-radius:12px;background:#fff;font:400 16px var(--sans);color:var(--text)}
+.bk-form textarea{resize:vertical}
+.bk-form input:focus,.bk-form textarea:focus{outline:none;border-color:#1B3A66;box-shadow:0 0 0 4px rgba(242,179,61,.5)}
+.bk-form .btn{margin-top:18px;min-height:52px;width:100%}
+.bk-form .status{color:#1B3A66}

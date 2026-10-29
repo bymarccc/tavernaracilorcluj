@@ -77,3 +77,14 @@ form.addEventListener("submit",async e=>{
 const upd=()=>{const cs=[...row.children];const x=row.scrollLeft+row.clientWidth/2;let best=0,d=1e9;cs.forEach((c,i)=>{const m=Math.abs(c.offsetLeft+c.offsetWidth/2-x);if(m<d){d=m;best=i}});
 if(row.scrollLeft+row.clientWidth>=row.scrollWidth-4)best=cs.length-1;dots.forEach((e,i)=>e.classList.toggle("on",i===best))};
 row.addEventListener("scroll",upd,{passive:true});upd()})();
+
+/* seafood boil booking form */
+(()=>{const f=$("#boilform"),st=$("#bf-status");if(!f)return;
+f.addEventListener("submit",async e=>{e.preventDefault();
+const bad=$$("[required]",f).find(i=>!i.value.trim());
+if(bad){st.textContent="Vă rugăm completați câmpurile marcate cu *.";bad.focus();return}
+const d=Object.fromEntries(new FormData(f));
+const body=`Pachet: Seafood Boil\nPrenume: ${d.prenume}\nNume: ${d.nume}\nCompanie: ${d.companie||"-"}\nTelefon: ${d.telefon}\nE-mail: ${d.email}\nData preferată: ${d.data}\nNumăr aproximativ de persoane: ${d.persoane}\nMesaj: ${d.mesaj||"-"}`;
+if(SITE.formEndpoint){try{const r=await fetch(SITE.formEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({pachet:"Seafood Boil",...d})});if(!r.ok)throw 0;st.textContent="Mulțumim! Revenim cu propunerea în cel mai scurt timp.";f.reset()}catch(_){st.textContent="Nu am putut trimite cererea. Încercați din nou sau contactați-ne direct."}}
+else if(SITE.email){location.href=`mailto:${SITE.email}?subject=${encodeURIComponent("Cerere ofertă Seafood Boil – "+d.prenume+" "+d.nume)}&body=${encodeURIComponent(body)}`;st.textContent="Se deschide aplicația de e-mail cu cererea completată."}
+else st.textContent="Formularul nu este încă conectat."})})();
