@@ -30,6 +30,7 @@ $$("[data-social]").forEach(a=>{const u=SITE.social[a.dataset.social];u?a.href=u
 /* reveal on scroll */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
 $$(".rv").forEach(el=>io.observe(el));
+$$(".ocard").forEach((el,i)=>{el.style.transitionDelay=(i%3*120)+"ms";io.observe(el)});
 
 /* hero video: fade in when ready, no autoplay for reduced motion */
 const hv=$("video[data-hero]");

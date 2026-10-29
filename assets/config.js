@@ -13,8 +13,8 @@ const SITE = {
   menuUrl: "https://tavernaracilor.ro/meniu-qr/",   // pagina cu meniul complet
   contactName: "",
   links: {             // unde duce „Explorează” la fiecare tip de eveniment
-    corporate: "#pachete",   // oferta cu pachete (de pe această pagină sau o pagină separată)
-    private: "", weddings: ""  // gol = deschide formularul de ofertă
+    corporate: "corporate.html",
+    private: "private.html", weddings: "nunti.html"
   },
   social: {            // linkurile rețelelor sociale
     linkedin: "", facebook: "", tiktok: "",
