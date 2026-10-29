@@ -467,3 +467,27 @@ a.ocard:hover img{transform:scale(1.04)}
   .menu li a{font-size:34px}
   .bar .btn{min-height:34px;font-size:13px}
 }
+
+/* packages: compact swipeable row on phones/tablets, 3 columns on desktop */
+@media(max-width:979px){
+  #pachete .wrap{width:100%}
+  #pachete .center{padding-inline:16px}
+  .cards{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:4px 16px 14px;scroll-padding-left:16px;scrollbar-width:none}
+  .cards::-webkit-scrollbar{display:none}
+  .cards .card{flex:0 0 74%;max-width:300px;scroll-snap-align:start}
+  .cards .card figure{aspect-ratio:16/10}
+  .cards .cbody{padding:14px 14px 16px}
+  .cards .cbody h3{font-size:20px}
+  .cards .cbody .rule{margin:8px 0 10px!important;width:70px}
+  .cards .cbody .for{font-size:12.5px;margin-bottom:6px}
+  .cards .cbody ul{gap:4px;margin:2px 0 14px}
+  .cards .cbody li{font-size:12.5px;line-height:1.4;padding-left:16px}
+  .cards .price{padding-top:10px;margin-bottom:12px}
+  .cards .price strong{font-size:20px}.cards .price small{font-size:12px}
+  .cards .btn{min-height:34px;font-size:13px}
+  .cards .badge{font-size:10.5px;padding:6px 10px}
+}
+.dots{display:none;justify-content:center;gap:7px;margin-top:4px}
+@media(max-width:979px){.dots{display:flex}}
+.dots i{width:7px;height:7px;border-radius:50%;background:rgba(85,44,60,.25);transition:background .2s,width .2s}
+.dots i.on{background:var(--plum);width:18px;border-radius:4px}

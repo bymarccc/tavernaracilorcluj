@@ -71,3 +71,9 @@ form.addEventListener("submit",async e=>{
     status.textContent="Formularul nu este încă conectat. Completați SITE.email sau SITE.formEndpoint.";
   }
 });
+
+/* package slider dots */
+(()=>{const row=$(".cards"),dots=$$("#pdots i");if(!row||!dots.length)return;
+const upd=()=>{const cs=[...row.children];const x=row.scrollLeft+row.clientWidth/2;let best=0,d=1e9;cs.forEach((c,i)=>{const m=Math.abs(c.offsetLeft+c.offsetWidth/2-x);if(m<d){d=m;best=i}});
+if(row.scrollLeft+row.clientWidth>=row.scrollWidth-4)best=cs.length-1;dots.forEach((e,i)=>e.classList.toggle("on",i===best))};
+row.addEventListener("scroll",upd,{passive:true});upd()})();
