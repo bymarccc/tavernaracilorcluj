@@ -17,7 +17,7 @@ const SITE = {
     private: "private.html", weddings: "nunti.html"
   },
   social: {            // linkurile rețelelor sociale
-    linkedin: "", facebook: "", tiktok: "",
+    linkedin: "", facebook: "", tiktok: "https://www.tiktok.com/@tavernaracilor.cluj",
     instagram: "https://www.instagram.com/tavernaracilor.cluj"
   },
   phone: "",           // ex: "+40 7xx xxx xxx"
