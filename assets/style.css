@@ -374,3 +374,22 @@ form .btn{min-height:46px;margin-top:16px}
 .knows{display:grid;gap:10px;margin-top:clamp(24px,4vw,40px)}
 @media(min-width:760px){.knows{grid-template-columns:1fr 1fr}}
 .knows .perk{margin-top:0}
+
+/* logo image in header/footer */
+.logo img{height:56px;width:auto}
+header.compact .logo img{height:46px}
+.nav{height:72px}
+header.compact .nav{height:60px}
+@media(max-width:760px){.logo img{height:48px}.nav{height:66px}}
+.flogo{height:clamp(84px,12vw,110px);width:auto;margin-bottom:clamp(26px,4vw,40px)}
+/* map */
+.mapfig{position:relative;display:block;margin-top:clamp(22px,3vw,34px);aspect-ratio:3/2;overflow:hidden;background:var(--card)}
+@media(min-width:900px){.mapfig{aspect-ratio:21/9}}
+.mapfig img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.mapfig:hover img{transform:scale(1.02)}
+.maplink{position:absolute;left:14px;bottom:14px;display:inline-flex;gap:8px;align-items:center;padding:9px 16px;background:var(--plum);color:#fff;font-size:14px;border-radius:8px}
+.maplink i{font-style:normal}
+/* wide photo band */
+.widefig{margin:0;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(150deg,#6b3a4c,var(--plum-d))}
+@media(min-width:900px){.widefig{aspect-ratio:21/9}}
+.widefig img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
