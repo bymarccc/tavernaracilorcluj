@@ -7,8 +7,8 @@ const SITE = {
     clasic: "150", platou: "150", boil: "120",
     soft: "", vinbere: "", complet: ""
   },
-  minGuests: "",       // număr minim de participanți
-  groupCap: "",        // capacitatea zonei pentru grupuri
+  minGuests: "50",       // număr minim de participanți
+  groupCap: "300",        // capacitatea zonei pentru grupuri
   minVouchers: "",     // comandă minimă vouchere
   menuUrl: "https://tavernaracilor.ro/meniu-qr/",   // pagina cu meniul complet
   contactName: "",

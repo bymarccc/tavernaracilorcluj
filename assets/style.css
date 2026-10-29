@@ -543,3 +543,6 @@ a.ocard:hover img{transform:scale(1.04)}
 .vsoon{display:grid;place-items:center}
 .vplay{width:58px;height:58px;border-radius:50%;border:2px solid rgba(255,255,255,.85);position:relative}
 .vplay::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-35%,-50%);border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent #fff}
+
+.details small{margin-bottom:6px}
+.details strong{display:block}
