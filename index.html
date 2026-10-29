@@ -97,16 +97,23 @@ header .btn:hover{background:#fff}
 .menu li a:hover{color:var(--sage)}
 .menu .btn{margin-top:30px}
 
-/* hero */
-.hero{min-height:min(92svh,860px);display:flex;align-items:flex-end;color:#fff;background:var(--plum-d);overflow:hidden;isolation:isolate}
+/* hero: rounded card with video background and translucent overlay */
+.hero{position:relative;margin:128px 12px 0;border-radius:28px;min-height:min(84svh,780px);display:flex;align-items:flex-end;color:#fff;background:var(--plum-d);overflow:hidden;isolation:isolate}
+@media(min-width:900px){.hero{margin:134px 20px 0;border-radius:36px;min-height:min(82svh,800px)}}
 .hero-media{position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 60% at 80% 25%,rgba(165,183,136,.22),transparent 70%),linear-gradient(160deg,var(--plum),var(--plum-d))}
-.hero-media img{width:100%;height:100%;object-fit:cover}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(40,18,28,.5),rgba(40,18,28,.25) 40%,rgba(40,18,28,.82))}
-.hero .wrap{padding:190px 0 clamp(90px,11vw,140px)}
-.hero h1{font-size:clamp(50px,8.4vw,108px);max-width:17ch;margin:14px 0 6px}
-.hero .lead{color:#F0E6EA;max-width:48ch}
-.hero .eyebrow{color:var(--sage)}
+.hero-media video{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s}
+.hero-media video.ready{opacity:1}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(62,31,43,.45) 0%,rgba(62,31,43,.35) 45%,rgba(40,18,28,.78) 100%)}
+.hero .wrap{padding:clamp(40px,6vw,70px) 0 0}
+.hero-in{padding-bottom:clamp(36px,5vw,56px)}
+.hero h1{font-size:clamp(50px,8vw,104px);max-width:17ch;margin:22px 0 14px}
+.hero .lead{color:#F4ECEF;max-width:48ch}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid rgba(255,255,255,.4);border-radius:999px;background:rgba(255,255,255,.1);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);font-size:14px;letter-spacing:.01em}
+.pill::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--sage)}
+.hero-foot{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 28px;padding:20px 0 clamp(22px,3vw,34px);border-top:1px solid rgba(255,255,255,.35);font-size:17px}
+.hero-foot b{font:400 clamp(26px,3.4vw,40px)/1.1 var(--head);letter-spacing:.01em;text-transform:uppercase}
+.hero-foot span{color:#E7DAE0}
 
 /* brush */
 .brush{position:absolute;left:0;width:100%;top:0;height:clamp(36px,6vw,84px);transform:translateY(-99%);fill:currentColor;pointer-events:none;z-index:2}
@@ -141,9 +148,9 @@ header .btn:hover{background:#fff}
 .fact:first-child span{color:var(--on-plum-muted);margin:0}
 
 /* video stages */
-.stages{display:grid;gap:16px;margin-top:clamp(32px,5vw,56px)}
-@media(min-width:760px){.stages{grid-template-columns:1fr 1fr}}
-.stage{position:relative;overflow:hidden;aspect-ratio:5/4;isolation:isolate}
+.stages{margin-top:clamp(32px,5vw,56px)}
+.stage{position:relative;overflow:hidden;aspect-ratio:4/5;isolation:isolate}
+@media(min-width:760px){.stage{aspect-ratio:21/9}}
 .stage.s1{background:var(--plum)}
 .stage.s2{background:var(--sage-d)}
 .stage video{position:absolute;top:0;left:50%;transform:translateX(-50%);width:auto;height:100%;aspect-ratio:9/16;object-fit:cover;background:#000;opacity:0;transition:opacity .6s}
@@ -304,22 +311,23 @@ form .hint{text-align:center}
 
 <section class="hero" id="hero">
   <div class="hero-media">
-    <!-- assets/hero.jpg: imagine atmosferică (restaurant / platou) -->
-    <img src="assets/hero.jpg" alt="Masă de echipă la Taverna Racilor, Cluj" fetchpriority="high" onerror="this.remove()">
+    <video autoplay muted loop playsinline preload="auto" aria-hidden="true" data-hero><source src="assets/video-1.mp4" type="video/mp4"></video>
   </div>
   <div class="wrap">
-    <span class="eyebrow rv">Cină de Crăciun · Team building · Evenimente de firmă</span>
-    <h1 class="rv">Crăciunul echipei, în jurul aceleiași mese</h1>
-    <p class="lead rv">La Taverna Racilor, Iulius Mall Cluj. Zonă separată pentru grup și preț fix pe persoană.</p>
-    <div class="cta-row rv">
-      <a class="btn btn-light" href="#form">Solicită o ofertă</a>
-      <a class="btn btn-line" href="#pachete">Vezi pachetele</a>
+    <div class="hero-in">
+      <span class="pill rv">Cină de Crăciun · Team building · Evenimente de firmă</span>
+      <h1 class="rv">Crăciunul echipei, în jurul aceleiași mese</h1>
+      <p class="lead rv">La Taverna Racilor, Iulius Mall Cluj. Zonă separată pentru grup și preț fix pe persoană.</p>
+      <div class="cta-row rv">
+        <a class="btn btn-light" href="#form">Solicită o ofertă</a>
+        <a class="btn btn-line" href="#pachete">Vezi pachetele</a>
+      </div>
     </div>
+    <div class="hero-foot"><b>Iarna 2026</b><span>Ofertă pentru sezonul de iarnă, cu preț fix pe persoană.</span></div>
   </div>
 </section>
 
 <section class="sec" id="evenimente">
-  <svg class="brush c-bg" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><use href="#brushA"/></svg>
   <div class="wrap">
     <div class="evintro rv">
       <h2>Evenimente la Taverna Racilor Cluj</h2>
@@ -371,8 +379,6 @@ form .hint{text-align:center}
       </div>
     </div>
     <div class="stages">
-      <div class="stage s1 rv"><span class="note">Se încarcă videoclipul…</span>
-        <video muted loop playsinline preload="none" aria-label="Videoclip de prezentare, Taverna Racilor" data-lazy><source src="assets/video-1.mp4" type="video/mp4"></video></div>
       <div class="stage s2 rv"><span class="note">Se încarcă videoclipul…</span>
         <video muted loop playsinline preload="none" aria-label="Videoclip cu Seafood Boil, Taverna Racilor" data-lazy><source src="assets/video-2.mp4" type="video/mp4"></video></div>
     </div>
@@ -623,6 +629,11 @@ $$("[data-social]").forEach(a=>{const u=SITE.social[a.dataset.social];u?a.href=u
 /* reveal on scroll */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
 $$(".rv").forEach(el=>io.observe(el));
+
+/* hero video: fade in when ready, no autoplay for reduced motion */
+const hv=$("video[data-hero]");
+if(hv){const rdy=()=>hv.classList.add("ready");hv.addEventListener("loadeddata",rdy);hv.addEventListener("canplay",rdy);if(hv.readyState>=2)rdy();
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){hv.removeAttribute("autoplay");hv.pause()}else hv.play().catch(()=>{})}
 
 /* videos: play only while visible, hide if file missing */
 $$("video[data-lazy]").forEach(v=>{
