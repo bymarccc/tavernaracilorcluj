@@ -522,3 +522,12 @@ a.ocard:hover img{transform:scale(1.04)}
 @media(min-width:1100px){.mtile figure{aspect-ratio:2.6/1}}
 
 @media(min-width:900px){.evgrid{grid-template-columns:repeat(3,1fr)}}
+
+/* menu tiles on desktop: one row of 7 near-square photos, like London Kitchen */
+@media(min-width:1100px){
+  .mgrid{grid-template-columns:repeat(7,1fr);gap:12px}
+  .mtile{border-radius:8px;overflow:hidden}
+  .mtile figure{aspect-ratio:1/.97}
+  .mlabel{font-size:20px;padding:14px 6px 12px}
+}
+@media(min-width:640px) and (max-width:1099px){.mtile figure{aspect-ratio:2/1}}
