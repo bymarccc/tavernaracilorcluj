@@ -136,6 +136,18 @@ header .btn:hover{background:#fff}
 .ev p{margin-bottom:22px;font-size:17px;line-height:1.65}
 .ev .link{margin-top:auto}
 
+/* menu tiles (LK "our menus") */
+.kicker{display:block;font:400 clamp(24px,3vw,30px)/1 var(--head);letter-spacing:.02em;text-transform:uppercase;color:#7E9366;margin-bottom:12px}
+.mgrid{display:grid;gap:18px;margin-top:clamp(32px,5vw,52px)}
+@media(min-width:640px){.mgrid{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.mgrid{grid-template-columns:repeat(4,1fr)}}
+.mtile{display:block;background:var(--plum);color:#fff;text-decoration:none}
+.mtile figure{margin:0;aspect-ratio:2/1;overflow:hidden;background:linear-gradient(150deg,#6b3a4c,var(--plum-d))}
+@media(min-width:1100px){.mtile figure{aspect-ratio:4/3}}
+.mtile img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.mtile:hover img{transform:scale(1.04)}
+.mlabel{display:block;padding:20px 12px 18px;text-align:center;font:400 clamp(26px,3vw,30px)/1 var(--head);letter-spacing:.02em;text-transform:uppercase}
+
 /* intro + facts */
 .intro-grid{display:grid;gap:36px}
 @media(min-width:900px){.intro-grid{grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}}
@@ -364,6 +376,24 @@ form .hint{text-align:center}
   </div>
 </section>
 
+<section class="sec" id="meniuri" style="padding-top:0">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kicker">Meniurile noastre</span>
+      <h2>Mâncare care merită sărbătorită</h2><span class="rule"></span>
+    </div>
+    <div class="mgrid">
+      <a class="mtile rv" data-menu href="#form"><figure><img src="assets/menu-business-lunch.jpg" alt="Business lunch" loading="lazy" decoding="async" onerror="this.remove()"></figure><span class="mlabel">Business lunch</span></a>
+      <a class="mtile rv" data-menu href="#form"><figure><img src="assets/menu-seafood-boil.jpg" alt="Seafood Boil" loading="lazy" decoding="async" onerror="this.remove()"></figure><span class="mlabel">Seafood Boil</span></a>
+      <a class="mtile rv" data-menu href="#form"><figure><img src="assets/menu-platouri.jpg" alt="Platouri" loading="lazy" decoding="async" onerror="this.remove()"></figure><span class="mlabel">Platouri</span></a>
+      <a class="mtile rv" data-menu href="#form"><figure><img src="assets/menu-seafood-snacks.jpg" alt="Seafood Snacks" loading="lazy" decoding="async" onerror="this.remove()"></figure><span class="mlabel">Seafood Snacks</span></a>
+      <a class="mtile rv" data-menu href="#form"><figure><img src="assets/menu-burgers.jpg" alt="Burgers" loading="lazy" decoding="async" onerror="this.remove()"></figure><span class="mlabel">Burgers</span></a>
+      <a class="mtile rv" data-menu href="#form"><figure><img src="assets/menu-octopus.jpg" alt="Octopus" loading="lazy" decoding="async" onerror="this.remove()"></figure><span class="mlabel">Octopus</span></a>
+      <a class="mtile rv" data-menu href="#form"><figure><img src="assets/menu-garnituri.jpg" alt="Garnituri" loading="lazy" decoding="async" onerror="this.remove()"></figure><span class="mlabel">Garnituri</span></a>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="locatie">
   <div class="wrap">
     <div class="intro-grid">
@@ -584,6 +614,7 @@ const SITE = {
   minGuests: "",       // număr minim de participanți
   groupCap: "",        // capacitatea zonei pentru grupuri
   minVouchers: "",     // comandă minimă vouchere
+  menuUrl: "https://tavernaracilor.ro/meniu-qr/",   // pagina cu meniul complet
   contactName: "",
   links: {             // unde duce „Explorează” la fiecare tip de eveniment
     corporate: "#pachete",   // oferta cu pachete (de pe această pagină sau o pagină separată)
@@ -614,6 +645,7 @@ $$("[data-link]").forEach(el=>{
   if(!el.closest(".bar"))el.textContent=v;
 });
 
+$$("[data-menu]").forEach(a=>{if(SITE.menuUrl){a.href=SITE.menuUrl;a.target="_blank";a.rel="noopener"}});
 $$("[data-go]").forEach(a=>{a.href=SITE.links[a.dataset.go]||"#form"});
 
 /* header, menu, mobile bar */
