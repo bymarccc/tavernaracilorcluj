@@ -582,3 +582,56 @@ a.ocard:hover img{transform:scale(1.04)}
 .boil-two{position:relative}
 .stamp{position:absolute;width:clamp(90px,11vw,130px);color:var(--hot);right:clamp(8px,2vw,20px);top:-20px;z-index:3;transform:rotate(-10deg);background:var(--bg);border-radius:50%}
 @media(max-width:899px){.stamp{right:6px;top:auto;bottom:-30px}}
+
+/* ===== Seafood Boil page: bucket colours (black, orange-red, yellow, navy) ===== */
+.bp{--paper:#F5ECD9;--sand:#EFE2C6;--bo:#E2512B;--br:#A5281B;--by:#F2B33D;--bn:#1B3A66;--bk:#14110F}
+.bp-paper{background:var(--paper)}.bp-sand{background:var(--sand)}.bp-orange{background:var(--bo);color:#fff}
+.brush.c-paper{color:var(--paper)}.brush.c-sand{color:var(--sand)}.brush.c-orange{color:var(--bo)}
+.bp .btn{border-radius:10px;font-family:"Fredoka",var(--sans);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:14px}
+.btn-yel{background:#F2B33D;color:#1B3A66;border-color:#F2B33D}
+.btn-yel:hover{background:#FFC857;border-color:#FFC857}
+.btn-navy{background:#1B3A66;color:#fff;border-color:#1B3A66}.btn-navy:hover{background:#14294a}
+.bhero .pill::before{background:#F2B33D}
+.bhero h1{font-family:"Fredoka",var(--head);font-weight:700;text-transform:uppercase;line-height:.95;letter-spacing:0}
+.bp-center{text-align:center;display:grid;justify-items:center;gap:16px}
+.roundstamp{width:clamp(110px,14vw,150px)}
+.bp-h{font-family:"Fredoka",var(--head);font-weight:700;text-transform:uppercase;line-height:1.02;font-size:clamp(30px,6vw,60px);letter-spacing:0}
+.bp-h span{display:block}.bp-h .o{color:var(--bo)}.bp-h .r{color:var(--br)}
+.bp-p{max-width:60ch;font-size:15px;line-height:1.65;color:#2B2724}
+.bp-p.w{color:#FFF3E6}
+.bp-k{font:600 13px/1 "Fredoka",var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--br)}
+.bp-h2{font-family:"Fredoka",var(--head);font-weight:700;text-transform:uppercase;font-size:clamp(26px,4.6vw,44px);line-height:1.05;color:var(--bn);letter-spacing:0}
+.bp-h2.w{color:#fff}
+.bp-script{font-family:"Fredoka",var(--head);font-weight:700;font-style:italic;font-size:clamp(28px,5vw,46px);color:var(--bn);text-transform:none;letter-spacing:0}
+.polaroid{position:relative;margin:clamp(30px,5vw,50px) auto 0;background:#fff;padding:12px 12px 36px;max-width:min(88%,460px);box-shadow:0 18px 30px -14px rgba(0,0,0,.4)}
+.polaroid img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}
+.polaroid .tape{position:absolute;width:90px;height:34px;background:rgba(242,179,61,.55);top:-14px;left:-20px;transform:rotate(-38deg)}
+.pl-a{transform:rotate(-3deg)}
+.pl-b{transform:rotate(-4deg)}.pl-b img{aspect-ratio:3/4}
+.pl-c{transform:rotate(3deg)}
+.pls{display:grid;gap:0;margin-top:10px}
+@media(min-width:760px){.pls{grid-template-columns:1fr 1fr;gap:30px;align-items:center}.pl-b,.pl-c{margin-top:30px}}
+.incard{max-width:640px;margin:0 auto;padding:clamp(24px,4vw,40px);border:3px solid #F2B33D;border-radius:26px;background:rgba(255,255,255,.35)}
+.inlist{display:grid;gap:8px;margin:14px 0 18px}
+.inlist li{font-family:"Fredoka",var(--sans);font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--bn);font-size:clamp(15px,2.2vw,18px)}
+.inprice{display:flex;align-items:baseline;gap:10px;padding:14px 0;border-top:2px dashed rgba(27,58,102,.3);border-bottom:2px dashed rgba(27,58,102,.3)}
+.inprice b{font:700 clamp(34px,5vw,48px)/1 "Fredoka",var(--head);color:var(--bo)}
+.inprice span{font-size:14px;color:#2B2724}
+.innote{margin-top:14px;font-size:14px;line-height:1.55;color:#2B2724}
+.steps3{display:grid;gap:26px;margin:clamp(22px,4vw,36px) 0;counter-reset:s}
+@media(min-width:860px){.steps3{grid-template-columns:repeat(3,1fr)}}
+.steps3 li{text-align:center;display:grid;justify-items:center;gap:6px;position:relative}
+.steps3 b{width:78px;height:78px;border-radius:50%;background:var(--bo);color:#fff;display:grid;place-items:center;font:700 38px/1 "Fredoka",sans-serif;box-shadow:inset 0 0 0 5px rgba(255,255,255,.25)}
+.steps3 h3{font:600 20px/1.2 "Fredoka",sans-serif;color:var(--bn);text-transform:uppercase;letter-spacing:.04em}
+.steps3 p{font-size:14px;color:#2B2724;max-width:30ch}
+.steps3 li:not(:last-child)::after{content:"";width:8px;height:8px;border-radius:50%;background:#F2B33D;box-shadow:0 14px 0 #F2B33D,0 28px 0 #F2B33D;margin:6px 0 34px}
+@media(min-width:860px){.steps3 li:not(:last-child)::after{display:none}}
+.bp-orange{padding-bottom:clamp(50px,8vw,80px)}
+.bp-orange .iconband{color:#FFD08A}
+.bp .perk{background:#fff;border:2px solid rgba(27,58,102,.15);border-radius:14px}
+.bp .ready{background:#1B3A66}
+.totop{position:fixed;right:14px;bottom:80px;z-index:55;width:44px;height:52px;border-radius:12px;background:#F2B33D;color:#1B3A66;display:grid;place-items:center;box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
+.totop svg{width:22px;height:22px}
+@media(min-width:900px){.totop{bottom:24px}}
+.polaroid img{height:auto}
+.bp-script{font-style:normal}
