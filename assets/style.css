@@ -420,3 +420,50 @@ a.ocard:hover img{transform:scale(1.04)}
 .js .ocard.in{opacity:1;transform:none}
 .js .ocard.in>*{clip-path:inset(0 0 0 0)}
 @media(prefers-reduced-motion:reduce){.js .ocard,.js .ocard>*{opacity:1;transform:none;clip-path:none;transition:none}}
+
+/* phone: match London Kitchen's small, tight proportions */
+@media(max-width:760px){
+  body{font-size:14px;line-height:1.55}
+  .wrap,.hwrap{width:min(100% - 32px,var(--wrap))}
+  h2{font-size:26px}
+  h3,.ev h3,.cbody h3{font-size:21px}
+  .pgh1{font-size:26px}
+  .rule{width:90px;margin:10px 0 12px}
+  .sec{padding:36px 0}
+  .lead,.evintro p,.evintro p+p{font-size:14px;line-height:1.55}
+  .btn{min-height:36px;padding:0 16px;font-size:13.5px}
+  .btn-sm{min-height:32px;padding:0 12px;font-size:13px}
+  .link{font-size:12.5px}.link::after{width:34px}
+  .logo img{height:40px}
+  header.compact .logo img{height:34px}
+  .nav{height:56px}header.compact .nav{height:50px}
+  .socials{height:30px;gap:12px}.socials svg{width:17px;height:17px}.socials a{width:20px;height:20px}
+  .burger{width:38px;height:38px;gap:5px}.burger i:first-child{width:16px}.burger i:last-child{width:10px}
+  .hero{margin:92px 10px 0;border-radius:20px;min-height:min(70svh,560px)}
+  .hero h1{font-size:36px;margin:12px 0 8px}
+  .hero .lead{font-size:14px}
+  .pill{font-size:12px;padding:6px 12px}
+  .hero-foot{font-size:13px;padding:12px 0 16px}.hero-foot b{font-size:20px}
+  .pghero{padding-top:76px}
+  .evintro h2{font-size:28px}
+  .ev h3{font-size:21px}.ev p,.obody p{font-size:13px;line-height:1.5}
+  .ev .cbody,.cbody{padding:16px 16px 20px}
+  .cbody li{font-size:13px}.cbody .for{font-size:13px}
+  .price strong{font-size:22px}
+  .mlabel{font-size:19px;padding:12px 8px 10px}
+  .kicker{font-size:18px;margin-bottom:6px}
+  .fact{padding:12px}.fact strong{font-size:24px}.fact:first-child strong{font-size:40px}.fact span{font-size:12.5px}
+  .obody h3{font-size:20px}
+  .ready h2{font-size:30px}.ready p{font-size:13.5px}
+  .rbtn{min-height:40px;font-size:14px}
+  .ready{padding:28px 16px 30px}
+  .contact h2{font-size:32px}
+  .flinks a,.fcontact a,.fcontact span.v{font-size:15px}
+  .copy{font-size:13px}
+  .how li{font-size:13px}
+  label{font-size:12.5px}input,select{min-height:38px;font-size:14px}
+  .perk,.perk.hl{font-size:13px}.perk.hl b{font-size:19px}
+  .drinks b{font-size:14.5px}.drinks .p{font-size:19px}
+  .menu li a{font-size:34px}
+  .bar .btn{min-height:34px;font-size:13px}
+}
