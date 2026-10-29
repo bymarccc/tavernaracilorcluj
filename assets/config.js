@@ -4,7 +4,7 @@
    ============================================================ */
 const SITE = {
   prices: {            // lei, doar cifre, ex: 189
-    clasic: "", platou: "", boil: "",
+    clasic: "150", platou: "150", boil: "120",
     soft: "", vinbere: "", complet: ""
   },
   minGuests: "",       // număr minim de participanți

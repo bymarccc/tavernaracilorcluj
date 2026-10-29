@@ -475,7 +475,7 @@ a.ocard:hover img{transform:scale(1.04)}
   .cards{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:4px 16px 14px;scroll-padding-left:16px;scrollbar-width:none}
   .cards::-webkit-scrollbar{display:none}
   .cards .card{flex:0 0 74%;max-width:300px;scroll-snap-align:start}
-  .cards .card figure{aspect-ratio:16/10}
+  .cards .card figure{aspect-ratio:16/10}.cards .card figure img{object-position:50% 60%}
   .cards .cbody{padding:14px 14px 16px}
   .cards .cbody h3{font-size:20px}
   .cards .cbody .rule{margin:8px 0 10px!important;width:70px}
