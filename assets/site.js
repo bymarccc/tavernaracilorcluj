@@ -34,12 +34,12 @@ $$(".ocard").forEach((el,i)=>{el.style.transitionDelay=(i%3*120)+"ms";io.observe
 
 /* hero video: fade in when ready, no autoplay for reduced motion */
 const hv=$("video[data-hero]");
-if(hv){const rdy=()=>hv.classList.add("ready");hv.addEventListener("loadeddata",rdy);hv.addEventListener("canplay",rdy);if(hv.readyState>=2)rdy();
+if(hv){const rdy=()=>hv.classList.add("vready");hv.addEventListener("loadeddata",rdy);hv.addEventListener("canplay",rdy);if(hv.readyState>=2)rdy();
   if(matchMedia("(prefers-reduced-motion: reduce)").matches){hv.removeAttribute("autoplay");hv.pause()}else hv.play().catch(()=>{})}
 
 /* videos: play only while visible, hide if file missing */
 $$("video[data-lazy]").forEach(v=>{
-  v.addEventListener("loadeddata",()=>v.classList.add("ready"));
+  v.addEventListener("loadeddata",()=>v.classList.add("vready"));
   new IntersectionObserver(es=>es.forEach(e=>{
     if(e.isIntersecting){v.preload="auto";v.play().catch(()=>{})}else v.pause();
   }),{threshold:.35}).observe(v);
