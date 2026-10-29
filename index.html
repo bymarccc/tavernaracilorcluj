@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taverna Racilor Cluj · Evenimente de firmă și cină de Crăciun</title>
+<meta name="description" content="Cină de Crăciun, mese de echipă și evenimente de firmă la Taverna Racilor, Iulius Mall Cluj. Trei pachete cu preț fix pe persoană, zonă separată pentru grup și vouchere cadou pentru angajați.">
+<meta name="theme-color" content="#552C3C">
+<meta property="og:title" content="Taverna Racilor Cluj · Evenimente de firmă">
+<meta property="og:description" content="Cină de Crăciun și mese de echipă cu Seafood Boil turnat direct pe masă. Zonă separată pentru grup, preț fix pe persoană.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23552C3C'/%3E%3Cpath d='M9 22c0-7 4-12 11-12M23 22c0-5-3-8-7-8' fill='none' stroke='%23A5B788' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --plum:#552C3C; --plum-d:#3E1F2B; --bg:#F9F8F4; --card:#F6F5F2; --sage:#A5B788; --sage-d:#5E7048;
+  --text:#1D1A1B; --muted:#5C5558; --line:rgba(85,44,60,.18);
+  --on-plum:#F9F8F4; --on-plum-muted:#D9C9D0;
+  --head:"Bebas Neue","Arial Narrow",Impact,sans-serif;
+  --sans:"Lato",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.65;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+img,video,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:400;text-transform:uppercase;line-height:1;letter-spacing:.01em;margin:0}
+p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--plum);padding:10px 16px;z-index:100;font-weight:700}
+.skip:focus{left:8px}
+.wrap{width:min(100% - 40px,var(--wrap));margin-inline:auto}
+section{position:relative}
+.sec{padding:clamp(56px,8vw,96px) 0}
+section[id]{scroll-margin-top:100px}
+h2{font-size:clamp(40px,6vw,64px)}
+h3{font-size:34px}
+.rule{display:block;width:125px;height:2px;background:var(--sage);margin:18px 0 20px}
+.center{text-align:center}.center .rule{margin-inline:auto}
+.lead{font-size:clamp(17px,1.6vw,19px);color:var(--muted);max-width:58ch}
+.on-plum{background:var(--plum);color:var(--on-plum)}
+.on-plum .lead{color:var(--on-plum-muted)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sage-d);margin-bottom:10px;display:block}
+.on-plum .eyebrow{color:var(--sage)}
+
+/* buttons */
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:10px;border:2px solid var(--plum);font:400 17px/1 var(--sans);text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn svg{width:18px;height:18px}
+.btn-fill{background:var(--plum);color:#fff}
+.btn-fill:hover{background:var(--plum-d);border-color:var(--plum-d)}
+.btn-line{background:transparent;color:var(--plum)}
+.btn-line:hover{background:var(--plum);color:#fff}
+.on-plum .btn-line,.hero .btn-line{border-color:#fff;color:#fff}
+.on-plum .btn-line:hover,.hero .btn-line:hover{background:#fff;color:var(--plum)}
+.btn-light{background:var(--bg);color:var(--plum);border-color:var(--bg)}
+.btn-light:hover{background:#fff;border-color:#fff}
+.btn-sm{min-height:44px;padding:0 20px;font-size:16px}
+.link{display:inline-flex;align-items:center;gap:12px;font-size:16px;font-weight:400;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;color:var(--text);padding:6px 0}
+.link::after{content:"";width:50px;height:1px;background:var(--sage-d);transition:width .25s}
+.link:hover::after{width:70px}
+.ph{outline:1.5px dashed currentColor;outline-offset:3px;opacity:.8}
+
+/* header */
+header.top{position:fixed;inset:0 0 auto 0;z-index:50;background:var(--plum)}
+.hwrap{width:min(100% - 40px,var(--wrap));margin-inline:auto}
+.socials{display:flex;justify-content:flex-end;gap:14px;height:40px;align-items:center;overflow:hidden;transition:height .3s,opacity .3s}
+.socials a{color:#fff;display:grid;place-items:center;width:24px;height:24px;transition:opacity .2s,transform .2s}
+.socials a:hover{transform:translateY(-2px)}
+.socials a.off{opacity:.4;pointer-events:none}
+.socials svg{width:20px;height:20px;fill:currentColor}
+header.compact .socials{height:0;opacity:0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;height:84px;border-bottom:1px solid rgba(255,255,255,.35);transition:height .3s}
+header.compact .nav{height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;min-width:0}
+.logo img{height:52px;width:auto}
+header.compact .logo img{height:42px}
+.logo b{font:400 28px/1 var(--head);letter-spacing:.04em;white-space:nowrap}
+.logo small{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--sage)}
+.navr{display:flex;align-items:center;gap:14px}
+.burger{width:52px;height:52px;border-radius:50%;border:0;background:#fff;box-shadow:0 6px 18px -6px rgba(0,0,0,.45);display:grid;place-content:center;gap:7px;cursor:pointer;transition:transform .2s}
+.burger:hover{transform:scale(1.05)}
+.burger i{display:block;height:2.5px;border-radius:2px;background:var(--plum);transition:transform .3s,width .3s}
+.burger i:first-child{width:22px}.burger i:last-child{width:14px}
+.burger[aria-expanded=true] i:first-child{width:22px;transform:translateY(4.7px) rotate(45deg)}
+.burger[aria-expanded=true] i:last-child{width:22px;transform:translateY(-4.7px) rotate(-45deg)}
+header .btn{background:var(--bg);color:var(--plum);border-color:var(--bg)}
+header .btn:hover{background:#fff}
+.menu{position:fixed;inset:0;z-index:45;background:var(--plum-d);padding:170px 0 40px;overflow:auto;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.menu.open{opacity:1;visibility:visible}
+.menu ul{display:grid;gap:4px}
+.menu li a{display:block;font:400 clamp(44px,9vw,84px)/1.05 var(--head);text-transform:uppercase;color:#fff;text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.menu li a:hover{color:var(--sage)}
+.menu .btn{margin-top:30px}
+
+/* hero */
+.hero{min-height:min(92svh,860px);display:flex;align-items:flex-end;color:#fff;background:var(--plum-d);overflow:hidden;isolation:isolate}
+.hero-media{position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 60% at 80% 25%,rgba(165,183,136,.22),transparent 70%),linear-gradient(160deg,var(--plum),var(--plum-d))}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(40,18,28,.5),rgba(40,18,28,.25) 40%,rgba(40,18,28,.82))}
+.hero .wrap{padding:190px 0 clamp(90px,11vw,140px)}
+.hero h1{font-size:clamp(50px,8.4vw,108px);max-width:17ch;margin:14px 0 6px}
+.hero .lead{color:#F0E6EA;max-width:48ch}
+.hero .eyebrow{color:var(--sage)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+
+/* brush */
+.brush{position:absolute;left:0;width:100%;top:0;height:clamp(36px,6vw,84px);transform:translateY(-99%);fill:currentColor;pointer-events:none;z-index:2}
+.brush.c-bg{color:var(--bg)}
+
+/* event types (LK-style) */
+.evintro{max-width:860px}
+.evintro h2{font-size:clamp(42px,7vw,72px)}
+.evintro p{font-size:clamp(17px,1.7vw,19px);line-height:1.6;margin-top:16px;text-align:justify;hyphens:auto}
+.evintro .btn{margin-top:28px}
+.evgrid{display:grid;gap:26px;margin-top:clamp(40px,6vw,64px)}
+@media(min-width:900px){.evgrid{grid-template-columns:repeat(3,1fr);gap:24px}}
+.ev{display:flex;flex-direction:column;background:var(--card)}
+.ev figure{margin:0;aspect-ratio:2/1;overflow:hidden;background:linear-gradient(150deg,#6b3a4c,var(--plum-d))}
+@media(min-width:900px){.ev figure{aspect-ratio:4/3}}
+.ev figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.ev:hover figure img{transform:scale(1.03)}
+.ev .cbody{padding:24px 24px 28px}
+.ev h3{font-size:36px}
+.ev p{margin-bottom:22px;font-size:17px;line-height:1.65}
+.ev .link{margin-top:auto}
+
+/* intro + facts */
+.intro-grid{display:grid;gap:36px}
+@media(min-width:900px){.intro-grid{grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fact{padding:20px;background:var(--card)}
+.fact:first-child{grid-column:1/-1;background:var(--plum);color:#fff;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.fact strong{display:block;font:400 clamp(36px,4.5vw,48px)/1 var(--head);color:var(--plum)}
+.fact:first-child strong{color:var(--sage);font-size:clamp(56px,7vw,76px)}
+.fact span{display:block;font-size:15px;line-height:1.4;color:var(--muted);margin-top:4px}
+.fact:first-child span{color:var(--on-plum-muted);margin:0}
+
+/* video stages */
+.stages{display:grid;gap:16px;margin-top:clamp(32px,5vw,56px)}
+@media(min-width:760px){.stages{grid-template-columns:1fr 1fr}}
+.stage{position:relative;overflow:hidden;aspect-ratio:5/4;isolation:isolate}
+.stage.s1{background:var(--plum)}
+.stage.s2{background:var(--sage-d)}
+.stage video{position:absolute;top:0;left:50%;transform:translateX(-50%);width:auto;height:100%;aspect-ratio:9/16;object-fit:cover;background:#000;opacity:0;transition:opacity .6s}
+.stage video.ready{opacity:1}
+.stage .note{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:rgba(255,255,255,.7);font-size:13px;z-index:-1}
+
+/* package cards (image on top, flat) */
+.cards{display:grid;gap:22px;margin-top:clamp(32px,5vw,52px)}
+@media(min-width:980px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{display:flex;flex-direction:column;background:var(--card)}
+.card figure{position:relative;margin:0;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(150deg,#6b3a4c,var(--plum-d))}
+.card figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover figure img{transform:scale(1.03)}
+.badge{position:absolute;top:0;left:0;z-index:2;background:var(--plum);color:#fff;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:9px 14px}
+.cbody{display:flex;flex-direction:column;flex:1;padding:26px 28px 30px}
+.cbody .for{color:var(--muted);font-size:16px}
+.cbody ul{display:grid;align-content:start;gap:8px;margin:4px 0 22px;flex:1}
+.cbody li{position:relative;padding-left:20px;font-size:16px;line-height:1.5}
+.cbody li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:2px;background:var(--sage-d)}
+.price{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding-top:16px;border-top:1px solid var(--line);margin-bottom:18px}
+.price small{font-size:14px;color:var(--muted)}
+.price strong{font:400 32px/1 var(--head);color:var(--plum)}
+.cbody .btn{width:100%}
+
+/* boil */
+.missing::before{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;font-size:13px;color:rgba(255,255,255,.6);z-index:1}
+.boil-grid{display:grid;gap:34px;align-items:center}
+@media(min-width:900px){.boil-grid{grid-template-columns:1fr 1fr;gap:70px}}
+.potfig{position:relative;margin:0;aspect-ratio:4/5;overflow:hidden;background:linear-gradient(150deg,#6b3a4c,var(--plum-d))}
+.potfig img{width:100%;height:100%;object-fit:cover}
+.steps{display:grid;gap:12px;margin:22px 0 28px}
+.steps li{padding-left:22px;position:relative}
+.steps li::before{content:"";position:absolute;left:0;top:.75em;width:10px;height:2px;background:var(--sage)}
+
+/* two-column info */
+.two{display:grid;gap:40px}
+@media(min-width:900px){.two{grid-template-columns:1fr 1fr;gap:70px}}
+.drinks{border-top:1px solid var(--line);margin-top:6px}
+.drinks li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.drinks b{display:block;font-size:18px}
+.drinks .d{font-size:15px;color:var(--muted)}
+.drinks .p{text-align:right;white-space:nowrap;font:400 26px/1 var(--head);color:var(--plum)}
+.drinks .p small{display:block;margin-top:6px;font:400 12px var(--sans);color:var(--muted)}
+.perk{padding:18px 22px;background:var(--card);margin-top:10px;font-size:16px}
+.perk.hl{background:var(--plum);color:var(--on-plum);margin-top:0}
+.perk.hl b{display:block;font:400 28px/1.1 var(--head);color:var(--sage);margin-bottom:6px;letter-spacing:.01em}
+.perk.hl p+p{margin-top:6px;color:var(--on-plum-muted)}
+.details{margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.details div{padding:14px 16px;background:var(--card)}
+.details small{display:block;font-size:13px;color:var(--muted)}
+.details strong{font:400 28px/1.1 var(--head);color:var(--plum)}
+
+/* fasting band */
+.band{display:grid;gap:18px;padding:clamp(26px,4vw,40px);background:var(--card)}
+@media(min-width:900px){.band{grid-template-columns:1fr 1fr;gap:50px;align-items:center}}
+.band h2{font-size:clamp(34px,4.5vw,48px)}
+.band .rule{margin:14px 0 0}
+
+/* voucher */
+.vouch{display:grid;gap:40px;align-items:center}
+@media(min-width:900px){.vouch{grid-template-columns:.9fr 1.1fr;gap:70px}}
+.vcard{max-width:440px;aspect-ratio:1.6;background:var(--bg);color:var(--plum);padding:24px 26px;display:flex;flex-direction:column;justify-content:space-between;position:relative;transform:rotate(-2.5deg);box-shadow:0 30px 50px -28px rgba(0,0,0,.6)}
+.vcard::before{content:"";position:absolute;inset:10px;border:1px solid var(--sage)}
+.vcard .t{display:flex;justify-content:space-between;font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;position:relative}
+.vcard .amt{font:400 clamp(80px,12vw,120px)/.85 var(--head);position:relative}
+.vcard .amt small{font-size:.35em;margin-left:6px;letter-spacing:.04em}
+.vcard .b{display:flex;justify-content:space-between;gap:10px;font-size:13px;font-weight:700;position:relative}
+.vouch ul{margin:18px 0 22px;display:grid;gap:10px}
+.vouch li{padding-left:22px;position:relative}
+.vouch li::before{content:"";position:absolute;left:0;top:.75em;width:10px;height:2px;background:var(--sage)}
+.vouch .fine{font-size:15px;color:var(--on-plum-muted);margin-bottom:24px}
+
+/* form */
+.form-grid{display:grid;gap:36px}
+@media(min-width:960px){.form-grid{grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}}
+.how{margin:22px 0 0;display:grid}
+.how li{display:grid;grid-template-columns:38px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line);align-items:baseline}
+.how li:last-child{border-bottom:1px solid var(--line)}
+.how b{font:400 30px/1 var(--head);color:var(--sage-d)}
+form{background:var(--card);padding:clamp(22px,4vw,38px)}
+.fields{display:grid;gap:16px}
+@media(min-width:620px){.fields{grid-template-columns:1fr 1fr}.fields .full{grid-column:1/-1}}
+label{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+label i{font-style:normal;font-weight:400;color:var(--muted)}
+input,select{width:100%;min-height:50px;padding:0 14px;border:1.5px solid #CFC9C5;border-radius:8px;background:#fff;font:400 16px var(--sans);color:var(--text)}
+input:focus,select:focus{outline:none;border-color:var(--plum);box-shadow:0 0 0 3px rgba(165,183,136,.5)}
+form .btn{width:100%;margin-top:20px;min-height:56px}
+.hint{margin-top:12px;font-size:14px;color:var(--muted)}
+form .hint{text-align:center}
+.status{margin-top:12px;font-size:15px;font-weight:700;text-align:center;color:var(--plum)}
+
+/* footer / contact */
+.contact{padding:clamp(56px,8vw,96px) 0 34px}
+.contact h2{font-size:clamp(44px,7vw,72px);max-width:12ch;margin-bottom:clamp(34px,5vw,50px)}
+.fgrid{display:grid;gap:0}
+@media(min-width:900px){.fgrid{grid-template-columns:1fr 1fr;gap:70px;align-items:start}}
+.fcol{border-top:2px solid rgba(255,255,255,.35);padding-top:clamp(30px,4vw,44px);margin-top:clamp(34px,5vw,50px)}
+@media(min-width:900px){.fcol{border-top:0;margin-top:0;padding-top:8px}}
+.flinks{display:grid;gap:6px;margin-bottom:34px}
+.flinks a,.fcontact a,.fcontact span.v{font-size:clamp(20px,2vw,24px);line-height:1.5;text-decoration:none;word-break:break-word}
+.flinks a:hover,.fcontact a:hover{text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--sage)}
+.fcontact{display:grid;gap:2px;margin-bottom:34px}
+.fsoc{display:flex;gap:12px;margin-bottom:34px}
+.fsoc a{color:#fff;width:32px;height:32px;display:grid;place-items:center;transition:transform .2s}
+.fsoc a:hover{transform:translateY(-2px)}
+.fsoc a.off{opacity:.45;pointer-events:none}
+.fsoc svg{width:20px;height:20px;fill:currentColor}
+.copy{font-size:clamp(17px,1.8vw,20px);color:var(--on-plum);margin-top:6px}
+
+/* mobile bar */
+.bar{position:fixed;left:10px;right:10px;bottom:10px;z-index:60;display:none;gap:10px;padding:10px;background:var(--plum);box-shadow:0 14px 34px -10px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .35s}
+.bar.on{transform:none}
+.bar .btn{flex:1;min-height:46px;padding:0 14px;font-size:15px}
+.bar .btn-line{flex:0 0 auto}
+@media(max-width:760px){.bar{display:flex}body{padding-bottom:78px}.nav .btn{display:none}.logo b{font-size:24px}.logo img{height:44px}.nav{height:74px}}
+
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#form">Sari la formularul de ofertă</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="brushA" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,100 L0.0,74.9 L4.4,73.9 L8.7,72.7 L14.8,72.6 L16.7,68.6 L19.5,72.6 L19.5,76.0 L24.1,75.2 L32.9,74.2 L41.8,72.7 L43.4,61.1 L45.9,72.7 L45.9,72.9 L50.5,75.4 L55.4,74.5 L61.3,71.9 L65.6,74.1 L71.7,73.3 L78.0,73.7 L85.5,72.1 L92.1,72.1 L97.5,69.1 L103.6,68.6 L110.1,68.0 L112.5,58.3 L116.1,68.0 L116.1,68.9 L124.5,68.4 L131.5,66.6 L139.7,65.7 L147.0,63.8 L149.2,53.7 L152.6,63.8 L152.6,66.1 L160.7,62.7 L168.0,61.2 L169.5,53.6 L171.7,61.2 L171.7,60.4 L176.0,59.9 L181.2,62.3 L185.6,60.6 L194.1,61.0 L199.5,58.5 L207.9,56.9 L212.8,56.9 L219.2,56.6 L223.2,56.7 L230.0,57.7 L236.6,57.3 L240.9,57.5 L249.3,55.7 L255.2,54.2 L256.5,44.8 L258.5,54.2 L258.5,54.3 L263.5,55.3 L267.8,54.0 L269.2,49.4 L271.2,54.0 L271.2,55.4 L275.3,56.4 L280.1,55.4 L285.9,57.5 L294.9,56.2 L299.3,54.3 L300.9,47.9 L303.4,54.3 L303.4,57.9 L308.2,54.5 L310.2,42.0 L313.3,54.5 L313.3,55.5 L320.0,54.9 L322.8,46.6 L326.9,54.9 L326.9,58.9 L334.4,57.2 L339.2,58.1 L347.1,57.1 L355.2,60.0 L363.2,59.8 L368.3,58.4 L372.5,57.0 L374.1,51.2 L376.5,57.0 L376.5,60.0 L385.3,61.1 L394.2,59.0 L399.3,58.3 L404.4,61.1 L412.6,60.1 L420.6,57.5 L423.2,47.9 L427.2,57.5 L427.2,60.3 L435.0,57.6 L442.9,59.8 L451.8,57.8 L460.5,56.3 L465.1,59.0 L473.2,58.1 L482.1,55.5 L488.8,53.7 L497.7,55.0 L506.3,55.6 L514.5,52.5 L519.9,53.3 L525.2,51.1 L533.8,51.7 L540.7,51.0 L549.3,50.9 L555.9,48.7 L557.4,41.3 L559.6,48.7 L559.6,48.1 L567.6,49.6 L575.2,48.7 L581.8,50.3 L586.4,48.0 L591.8,48.9 L598.6,50.5 L604.8,48.9 L611.3,48.7 L618.0,50.8 L625.5,51.0 L630.8,51.3 L639.0,48.4 L645.2,47.9 L646.5,42.5 L648.5,47.9 L648.5,51.2 L656.4,49.7 L664.0,50.3 L672.4,51.4 L681.2,53.4 L690.1,53.1 L696.3,54.5 L701.3,56.6 L705.4,56.0 L709.5,57.2 L716.0,54.7 L718.5,41.9 L722.2,54.7 L722.2,60.1 L726.7,57.0 L734.6,58.3 L740.7,61.7 L746.0,62.7 L752.8,60.2 L757.1,62.0 L761.5,63.3 L769.5,60.7 L770.8,49.2 L772.8,60.7 L772.8,65.3 L779.0,64.6 L787.7,63.5 L794.3,63.9 L799.1,63.5 L800.8,58.4 L803.4,63.5 L803.4,65.2 L811.2,66.4 L816.1,64.6 L821.3,64.5 L823.4,54.2 L826.5,64.5 L826.5,65.6 L832.9,65.4 L841.0,67.0 L849.1,67.0 L856.6,66.3 L864.7,67.4 L870.8,64.9 L875.4,64.7 L877.0,54.3 L879.4,64.7 L879.4,65.1 L883.9,67.8 L891.2,65.0 L896.7,64.5 L902.9,67.5 L911.8,64.2 L920.6,64.4 L924.6,64.7 L931.1,64.6 L935.1,62.8 L941.1,62.4 L942.8,59.2 L945.4,62.4 L945.4,63.1 L952.3,65.0 L959.6,65.4 L965.5,65.7 L970.3,64.4 L974.5,65.3 L981.6,65.1 L986.3,63.9 L994.5,65.3 L1001.4,65.0 L1008.9,62.6 L1013.6,63.1 L1021.7,65.6 L1028.9,65.5 L1032.9,66.8 L1039.4,66.8 L1043.7,65.5 L1048.1,67.8 L1053.1,69.2 L1059.6,67.7 L1067.0,68.9 L1074.2,66.4 L1075.8,62.0 L1078.2,66.4 L1078.2,70.4 L1083.8,68.0 L1088.1,71.0 L1095.5,70.1 L1102.1,71.4 L1106.7,70.7 L1115.6,70.7 L1121.9,75.0 L1128.1,72.4 L1136.9,74.5 L1141.6,76.2 L1146.2,74.7 L1154.7,74.0 L1163.2,73.4 L1167.2,75.2 L1172.7,74.9 L1178.3,73.5 L1186.0,74.0 L1194.7,77.0 L1200.1,74.8 L1209.1,74.3 L1215.2,72.7 L1219.7,73.4 L1228.4,72.8 L1235.0,72.7 L1243.8,73.7 L1250.9,73.5 L1257.7,69.3 L1265.3,71.3 L1272.5,67.7 L1281.2,68.4 L1286.9,68.8 L1295.8,67.4 L1301.3,65.7 L1306.1,64.4 L1314.6,63.4 L1323.2,63.4 L1327.9,61.5 L1333.6,61.1 L1335.2,55.7 L1337.6,61.1 L1337.6,62.4 L1346.1,61.0 L1352.1,60.3 L1357.8,58.8 L1360.6,53.0 L1364.7,58.8 L1364.7,58.4 L1371.2,60.9 L1376.3,58.1 L1382.3,60.7 L1390.5,56.6 L1394.7,60.0 L1401.1,56.2 L1407.0,59.4 L1415.3,57.0 L1419.8,58.1 L1427.2,58.9 L1434.5,58.0 L1441.2,56.1 L1442.8,45.3 L1445.2,56.1 L1440,100 Z"/></symbol>
+    <symbol id="brushB" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,100 L0.0,54.8 L4.4,53.3 L11.1,53.1 L17.3,54.9 L21.4,53.1 L23.3,43.0 L26.1,53.1 L26.1,56.2 L33.8,55.3 L41.7,58.7 L48.8,58.4 L56.6,60.1 L63.9,59.1 L70.3,61.8 L76.5,60.9 L81.4,63.9 L86.4,61.6 L90.6,63.9 L98.7,63.8 L104.1,65.9 L110.9,63.8 L118.8,67.2 L124.0,67.9 L130.9,65.3 L139.8,64.6 L141.0,57.4 L142.9,64.6 L142.9,68.3 L150.3,68.5 L159.1,69.4 L166.8,69.4 L172.7,65.8 L179.0,69.2 L187.8,65.7 L194.4,67.3 L202.5,66.6 L211.0,66.0 L219.5,67.9 L226.9,66.8 L235.1,64.7 L240.5,66.6 L247.3,66.6 L251.9,64.4 L258.7,63.8 L267.4,62.9 L269.5,54.2 L272.6,62.9 L272.6,63.4 L279.4,64.1 L287.0,62.3 L289.4,55.5 L293.1,62.3 L293.1,62.7 L301.5,64.8 L306.3,63.8 L310.7,64.1 L318.2,64.5 L324.8,66.0 L329.2,66.0 L335.7,65.5 L342.8,64.4 L348.5,67.3 L354.2,65.4 L362.3,66.5 L367.6,65.0 L372.7,68.4 L379.2,67.4 L383.8,67.7 L392.1,70.0 L397.3,69.6 L401.5,68.5 L407.3,71.3 L411.8,69.9 L419.2,69.3 L427.7,70.4 L436.6,71.1 L440.7,71.3 L448.4,74.1 L455.2,75.0 L462.2,73.5 L466.9,72.2 L468.4,60.6 L470.7,72.2 L470.7,74.3 L476.3,75.0 L484.6,74.6 L491.9,77.0 L497.4,77.3 L506.3,74.9 L514.2,73.4 L520.2,76.2 L526.9,74.6 L531.2,74.5 L539.3,74.0 L544.5,74.7 L550.7,74.9 L557.6,73.3 L564.7,72.9 L573.3,72.3 L579.5,69.7 L581.3,58.3 L584.0,69.7 L584.0,70.1 L588.3,68.6 L591.1,61.7 L595.2,68.6 L595.2,70.3 L602.8,67.6 L607.6,66.2 L614.5,67.3 L619.2,65.1 L620.6,57.4 L622.7,65.1 L622.7,66.7 L628.3,66.5 L635.3,63.4 L641.1,63.0 L646.5,63.5 L654.4,64.3 L658.5,62.3 L667.0,62.0 L675.8,58.9 L684.4,58.2 L692.5,57.8 L695.0,54.0 L698.7,57.8 L698.7,59.7 L707.5,58.4 L712.9,60.1 L720.1,56.7 L727.8,56.0 L735.9,56.4 L740.2,56.1 L749.0,55.5 L751.5,44.5 L755.1,55.5 L755.1,57.9 L761.9,58.2 L766.6,57.2 L773.6,59.6 L779.6,56.5 L785.3,58.8 L793.4,59.8 L801.4,57.4 L808.3,59.6 L814.5,60.6 L821.1,60.0 L829.7,61.3 L835.1,61.4 L842.6,61.9 L847.3,59.8 L852.3,62.4 L860.2,58.5 L861.9,53.0 L864.6,58.5 L864.6,62.2 L870.9,60.8 L876.2,58.6 L879.0,49.7 L883.1,58.6 L883.1,61.7 L890.8,60.7 L898.0,60.0 L902.3,59.2 L910.0,60.9 L915.6,57.8 L917.6,50.5 L920.6,57.8 L920.6,60.4 L926.6,58.4 L934.2,59.9 L943.0,56.4 L945.4,44.8 L949.1,56.4 L949.1,58.0 L953.6,58.0 L960.7,58.1 L967.9,54.2 L973.4,55.2 L982.2,54.8 L989.3,53.3 L997.0,52.6 L1002.7,50.5 L1008.3,50.3 L1014.8,53.1 L1022.7,52.2 L1028.0,50.8 L1033.2,49.7 L1041.6,47.9 L1048.7,48.2 L1057.4,49.5 L1066.3,47.1 L1073.9,49.3 L1079.6,48.7 L1087.9,46.3 L1089.6,39.6 L1092.1,46.3 L1092.1,49.6 L1096.7,46.4 L1098.1,42.3 L1100.2,46.4 L1100.2,48.3 L1108.5,47.3 L1115.9,49.5 L1123.6,50.6 L1130.7,51.2 L1139.2,50.0 L1145.7,52.6 L1153.4,53.5 L1160.1,51.0 L1166.5,55.2 L1174.7,53.3 L1183.2,54.1 L1187.3,56.2 L1191.9,56.7 L1199.7,56.3 L1206.3,58.5 L1212.5,57.2 L1217.5,57.3 L1223.5,61.4 L1228.4,59.4 L1233.6,60.2 L1238.6,59.0 L1240.1,54.3 L1242.4,59.0 L1242.4,63.5 L1246.6,61.1 L1254.2,60.2 L1256.6,53.5 L1260.2,60.2 L1260.2,61.4 L1266.2,63.7 L1273.4,61.7 L1275.0,50.1 L1277.4,61.7 L1277.4,65.5 L1282.1,62.4 L1283.4,57.4 L1285.4,62.4 L1285.4,63.7 L1290.1,62.7 L1292.2,51.2 L1295.3,62.7 L1295.3,65.1 L1301.8,63.4 L1306.0,63.4 L1312.6,66.8 L1316.6,64.7 L1323.5,63.4 L1326.2,52.9 L1330.3,63.4 L1330.3,65.6 L1337.6,66.6 L1345.7,63.4 L1353.7,65.7 L1359.3,65.2 L1364.8,63.4 L1370.0,62.6 L1378.4,64.3 L1385.8,62.7 L1390.3,62.5 L1396.4,61.8 L1403.2,61.4 L1405.1,55.7 L1407.8,61.4 L1407.8,61.4 L1415.8,61.0 L1423.9,63.6 L1428.2,64.4 L1433.5,61.9 L1440,100 Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="top" id="top">
+  <div class="hwrap">
+    <div class="socials" aria-label="Rețele sociale"><a data-social="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="8.5" width="4.2" height="12.5"/><circle cx="4.6" cy="4.4" r="2.5"/><path d="M9.6 8.5h4v1.8c.7-1.3 2.200-2.200 4.100-2.200 3.800 0 4.500 2.500 4.500 5.700V21h-4.200v-6.200c0-1.500-.1-3.100-1.900-3.100s-2.300 1.300-2.300 3V21H9.600z"/></svg></a><a data-social="facebook" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a><a data-social="instagram" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 1.500h9A6 6 0 0 1 22.500 7.500v9a6 6 0 0 1-6 6h-9a6 6 0 0 1-6-6v-9a6 6 0 0 1 6-6zm0 2.200a3.800 3.800 0 0 0-3.800 3.800v9a3.800 3.800 0 0 0 3.800 3.800h9a3.800 3.800 0 0 0 3.800-3.800v-9a3.800 3.800 0 0 0-3.800-3.800zM12 6.800a5.200 5.200 0 1 1 0 10.400 5.200 5.200 0 0 1 0-10.400zm0 2.200a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.400-3.300a1.200 1.200 0 1 1 0 2.400 1.200 1.200 0 0 1 0-2.400z"/></svg></a><a data-social="tiktok" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a></div>
+    <div class="nav">
+      <a class="logo" href="#hero" aria-label="Taverna Racilor Cluj, început de pagină">
+        <img src="assets/logo.png" alt="" onload="this.nextElementSibling.hidden=true" onerror="this.remove()">
+        <span><b>Taverna Racilor</b> <small>Cluj</small></span>
+      </a>
+      <div class="navr">
+        <a class="btn btn-sm" href="#form">Solicită o ofertă</a>
+        <button class="burger" id="burger" type="button" aria-label="Meniu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="menu" id="menu" aria-label="Meniu">
+  <div class="wrap">
+    <ul>
+      <li><a href="#pachete">Pachete</a></li><li><a href="#seafood-boil">Seafood Boil</a></li><li><a href="#bauturi">Băuturi</a></li><li><a href="#vouchere">Vouchere</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-light" href="#form">Solicită o ofertă</a>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <!-- assets/hero.jpg: imagine atmosferică (restaurant / platou) -->
+    <img src="assets/hero.jpg" alt="Masă de echipă la Taverna Racilor, Cluj" fetchpriority="high" onerror="this.remove()">
+  </div>
+  <div class="wrap">
+    <span class="eyebrow rv">Cină de Crăciun · Team building · Evenimente de firmă</span>
+    <h1 class="rv">Crăciunul echipei, în jurul aceleiași mese</h1>
+    <p class="lead rv">La Taverna Racilor, Iulius Mall Cluj. Zonă separată pentru grup și preț fix pe persoană.</p>
+    <div class="cta-row rv">
+      <a class="btn btn-light" href="#form">Solicită o ofertă</a>
+      <a class="btn btn-line" href="#pachete">Vezi pachetele</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="evenimente">
+  <svg class="brush c-bg" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><use href="#brushA"/></svg>
+  <div class="wrap">
+    <div class="evintro rv">
+      <h2>Evenimente la Taverna Racilor Cluj</h2>
+      <p>Taverna Racilor găzduiește evenimente de firmă, petreceri private și tot ce se află între ele. Suntem un restaurant din Cluj care înțelege termenele strânse, așteptările mari și nevoia de a face lucrurile cu stil.</p>
+      <p>De la gustări de bun venit până la cine servite la masă, mâncarea noastră este gândită să impresioneze. Adaptăm fiecare meniu la nevoile voastre, la invitați și la ocazie, și îl executăm cu precizie. Mâncare excelentă, servire atentă și încrederea că totul iese bine, de fiecare dată.</p>
+      <a class="btn btn-line" href="#locatie">Află mai multe <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a>
+    </div>
+    <div class="evgrid">
+      <article class="ev rv">
+        <figure><img src="assets/event-corporate.jpg" alt="Sală cu mese rotunde și aranjamente florale, pregătită pentru un eveniment de firmă" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+        <div class="cbody">
+          <h3>Corporate</h3><span class="rule" style="margin:14px 0 16px"></span>
+          <p>De la mese de echipă la cine de gală și recepții, organizăm evenimente cu impact, care reflectă brandul vostru.</p>
+          <a class="link" data-go="corporate" href="#form">Explorează Corporate</a>
+        </div>
+      </article>
+      <article class="ev rv">
+        <figure><img src="assets/event-private.jpg" alt="Masă lungă pregătită pentru un eveniment privat, cu echipa de servire aliniată" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+        <div class="cbody">
+          <h3>Private</h3><span class="rule" style="margin:14px 0 16px"></span>
+          <p>Cine intime, petreceri și aniversări importante, în zona dedicată grupurilor. Fără efort, cu o notă personală.</p>
+          <a class="link" data-go="private" href="#form">Explorează Private</a>
+        </div>
+      </article>
+      <article class="ev rv">
+        <figure><img src="assets/event-nunti.jpg" alt="Discurs la masa mirilor într-un restaurant luminat cald" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+        <div class="cbody">
+          <h3>Nunți</h3><span class="rule" style="margin:14px 0 16px"></span>
+          <p>Mâncare excelentă și servire impecabilă pentru o zi pe care n-o veți uita. Adaptat nevoilor voastre, livrat fără cusur.</p>
+          <a class="link" data-go="weddings" href="#form">Explorează Nunți</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="locatie">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="rv">
+        <h2>Seara echipei, fără să împartă sala</h2>
+        <span class="rule"></span>
+        <p class="lead">Taverna Racilor din Iulius Mall Cluj are o zonă separată pentru grupuri, pregătită și servită de o echipă dedicată. Echipa dumneavoastră se bucură de seara ei fără să împartă atmosfera cu restul sălii.</p>
+      </div>
+      <div class="facts rv">
+        <div class="fact"><strong>322</strong><span>de locuri în restaurant, plus zonă separată pentru grupuri</span></div>
+        <div class="fact"><strong>Preț fix</strong><span>pe persoană, bugetul se știe din prima zi</span></div>
+        <div class="fact"><strong>3 pași</strong><span>până la confirmarea datei</span></div>
+      </div>
+    </div>
+    <div class="stages">
+      <div class="stage s1 rv"><span class="note">Se încarcă videoclipul…</span>
+        <video muted loop playsinline preload="none" aria-label="Videoclip de prezentare, Taverna Racilor" data-lazy><source src="assets/video-1.mp4" type="video/mp4"></video></div>
+      <div class="stage s2 rv"><span class="note">Se încarcă videoclipul…</span>
+        <video muted loop playsinline preload="none" aria-label="Videoclip cu Seafood Boil, Taverna Racilor" data-lazy><source src="assets/video-2.mp4" type="video/mp4"></video></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pachete" style="padding-top:0">
+  <div class="wrap">
+    <div class="center rv">
+      <h2>Pachete de eveniment</h2><span class="rule"></span>
+      <p class="lead" style="margin-inline:auto">Toate au gustare de bun venit, ciorbă pescărească și desert. Se schimbă felul în care ajunge mâncarea la masă.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <figure data-label="assets/pkg-clasic.jpg"><img src="assets/pkg-clasic.jpg" alt="Fel principal individual de pește" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('missing');this.remove()"></figure>
+        <div class="cbody">
+          <h3>Clasic</h3><span class="rule" style="margin:12px 0 14px"></span>
+          <p class="for">Pentru mese de echipă relaxate</p>
+          <ul><li>Gustare de bun venit</li><li>Ciorbă pescărească</li><li>Fel principal individual de pește</li><li>Desert</li></ul>
+          <div class="price"><small>Preț pe persoană</small><strong data-price="clasic"></strong></div>
+          <a class="btn btn-line" href="#form" data-pack="Clasic">Cere ofertă</a>
+        </div>
+      </article>
+      <article class="card rv">
+        <figure data-label="assets/pkg-platou.jpg"><img src="assets/pkg-platou.jpg" alt="Platou cu fructe de mare servit la masă" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('missing');this.remove()"></figure>
+        <div class="cbody">
+          <h3>Platou</h3><span class="rule" style="margin:12px 0 14px"></span>
+          <p class="for">Pentru echipe care împart masa</p>
+          <ul><li>Gustare de bun venit</li><li>Ciorbă pescărească</li><li>Platouri cu fructe de mare servite la masă</li><li>Garnituri și sosuri</li><li>Desert</li></ul>
+          <div class="price"><small>Preț pe persoană</small><strong data-price="platou"></strong></div>
+          <a class="btn btn-line" href="#form" data-pack="Platou">Cere ofertă</a>
+        </div>
+      </article>
+      <article class="card rv">
+        <figure data-label="assets/pkg-boil.jpg"><span class="badge">Semnătura casei</span><img src="assets/pkg-boil.jpg" alt="Seafood Boil turnat direct pe masă" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('missing');this.remove()"></figure>
+        <div class="cbody">
+          <h3>Seafood Boil</h3><span class="rule" style="margin:12px 0 14px"></span>
+          <p class="for">Experiența semnătură a casei</p>
+          <ul><li>Gustare de bun venit</li><li>Ciorbă pescărească</li><li>Seafood Boil turnat direct pe masă</li><li>Platou cu fructe de mare</li><li>Desert</li></ul>
+          <div class="price"><small>Preț pe persoană</small><strong data-price="boil"></strong></div>
+          <a class="btn btn-fill" href="#form" data-pack="Seafood Boil">Cere ofertă</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-plum" id="seafood-boil">
+  <div class="wrap boil-grid">
+    <!-- Prima imagine din secțiune: fotografia cu persoana care ține oala -->
+    <figure class="potfig rv" id="potPhoto" data-label="Fotografia cu oala de Seafood Boil: assets/seafood-boil-pot.jpg">
+      <img src="assets/seafood-boil-pot.jpg" alt="Un om ține oala cu Seafood Boil înainte de a o turna pe masă" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('missing');this.remove()">
+    </figure>
+    <div class="rv">
+      <span class="eyebrow">Seafood Boil</span>
+      <h2>Oala ajunge la masă, iar masa devine a tuturor</h2>
+      <span class="rule"></span>
+      <p class="lead">Conținutul oalei este turnat direct pe masă, în fața întregii echipe. E momentul în care colegii se strâng în jurul aceleiași mese, își trec platourile și povestesc.</p>
+      <ul class="steps">
+        <li>Gustare de bun venit și ciorbă pescărească</li>
+        <li>Seafood Boil turnat direct pe masă, plus un platou cu fructe de mare</li>
+        <li>Desert, apoi seara continuă în zona dedicată grupului</li>
+      </ul>
+      <a class="btn btn-light" href="#form" data-pack="Seafood Boil">Solicită o ofertă</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="bauturi">
+  <div class="wrap two">
+    <div class="rv">
+      <h2>Băuturi</h2><span class="rule"></span>
+      <p class="lead" style="margin-bottom:22px">Se aleg separat, ca pachet pe persoană pentru fiecare oră de eveniment.</p>
+      <ul class="drinks">
+        <li><div><b>Soft</b><span class="d">Ape, sucuri, cafea</span></div><div class="p"><span data-price="soft"></span><small>persoană / oră</small></div></li>
+        <li><div><b>Vin și bere</b></div><div class="p"><span data-price="vinbere"></span><small>persoană / oră</small></div></li>
+        <li><div><b>Complet</b><span class="d">Vin, bere, spirtoase și soft</span></div><div class="p"><span data-price="complet"></span><small>persoană / oră</small></div></li>
+      </ul>
+    </div>
+    <div class="rv">
+      <h2>Avantaje de sezon</h2><span class="rule"></span>
+      <div class="perk hl">
+        <b>Upgrade gratuit, la alegere</b>
+        <p>Pentru evenimentele de luni până joi: prosecco la sosire, desert special sau o oră de băutură în plus.</p>
+        <p>Rezervare până pe 15 noiembrie: upgrade-ul se acordă indiferent de ziua evenimentului.</p>
+      </div>
+      <div class="perk">Zonă separată pentru grup, pregătită și servită de o echipă dedicată.</div>
+      <div class="perk">Confirmarea datei se face cu un avans de 30% din valoarea estimată a evenimentului.</div>
+      <div class="details">
+        <div><small>Număr minim de participanți</small><strong data-val="minGuests"></strong></div>
+        <div><small>Capacitatea zonei pentru grupuri</small><strong data-val="groupCap"></strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="post" style="padding-top:0">
+  <div class="wrap">
+    <div class="band rv">
+      <div>
+        <h2>Meniu de post</h2><span class="rule"></span>
+        <p class="lead">Toate pachetele au și variantă de dezlegare, fără produse lactate, ouă sau carne, pentru colegii care țin Postul Crăciunului.</p>
+      </div>
+      <div>
+        <h3>Alergii și preferințe</h3><span class="rule" style="margin:12px 0 14px"></span>
+        <p>Meniul se poate personaliza pentru alergii și preferințe alimentare, anunțate cu cel puțin 3 zile înainte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec on-plum" id="vouchere">
+  <div class="wrap vouch">
+    <div class="rv" aria-hidden="true">
+      <div class="vcard">
+        <div class="t"><span>Voucher cadou</span><span>Taverna Racilor</span></div>
+        <div class="amt">300<small>lei</small></div>
+        <div class="b"><span>Cină în doi sau în familie</span><span>1 ian – 31 mar 2027</span></div>
+      </div>
+    </div>
+    <div class="rv">
+      <span class="eyebrow">Cadouri pentru angajați</span>
+      <h2>Vouchere cadou de 300 de lei</h2><span class="rule"></span>
+      <p class="lead">Valoarea este egală cu plafonul pe care Codul fiscal îl prevede pentru cadourile neimpozabile oferite angajaților la Crăciun, pentru fiecare persoană.</p>
+      <ul>
+        <li>Se folosesc pentru o cină în doi sau în familie, oricând între 1 ianuarie și 31 martie 2027.</li>
+        <li>Pot fi personalizate cu numele firmei.</li>
+        <li>Comandă minimă:&nbsp;<strong data-val="minVouchers"></strong>&nbsp;vouchere.</li>
+      </ul>
+      <p class="fine">Tratamentul fiscal pentru firma dumneavoastră se confirmă cu departamentul de contabilitate.</p>
+      <a class="btn btn-light" href="#form" data-pack="Vouchere cadou">Solicită o ofertă pentru vouchere</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="form">
+  <div class="wrap form-grid">
+    <div class="rv">
+      <h2>Cum rezervați</h2><span class="rule"></span>
+      <ol class="how">
+        <li><b>1</b><span>Ne contactați cu data dorită, numărul de participanți și pachetul ales.</span></li>
+        <li><b>2</b><span>Primiți propunerea finală de meniu și valoarea estimată.</span></li>
+        <li><b>3</b><span>Confirmați data prin plata avansului de 30%.</span></li>
+      </ol>
+      <p class="hint">Locurile pentru decembrie se alocă în ordinea confirmărilor.</p>
+    </div>
+    <form id="enquiry" class="rv" novalidate>
+      <div class="fields">
+        <div class="full"><label for="company">Numele companiei</label><input id="company" name="company" type="text" autocomplete="organization" required></div>
+        <div><label for="person">Persoană de contact</label><input id="person" name="person" type="text" autocomplete="name" required></div>
+        <div><label for="contact">E-mail sau telefon</label><input id="contact" name="contact" type="text" autocomplete="email" required></div>
+        <div><label for="date">Data preferată</label><input id="date" name="date" type="date" required></div>
+        <div><label for="guests">Număr aproximativ de invitați</label><input id="guests" name="guests" type="number" min="1" inputmode="numeric" required></div>
+        <div class="full"><label for="pack">Pachet <i>(opțional)</i></label>
+          <select id="pack" name="pack"><option value="">Încă nu am decis</option><option>Clasic</option><option>Platou</option><option>Seafood Boil</option><option>Vouchere cadou</option></select></div>
+      </div>
+      <button class="btn btn-fill" type="submit">Solicită o ofertă</button>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<section class="on-plum contact" id="contact">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h2>Hai să lucrăm împreună</h2>
+        <a class="btn btn-line" href="#form">Contactează-ne</a>
+      </div>
+      <div class="fcol">
+        <ul class="flinks">
+          <li><a href="#hero">Acasă</a></li><li><a href="#pachete">Pachete</a></li><li><a href="#seafood-boil">Seafood Boil</a></li><li><a href="#vouchere">Vouchere</a></li><li><a href="#form">Contact</a></li>
+        </ul>
+        <div class="fcontact">
+          <a data-link="mail" data-val="email"></a>
+          <a data-link="tel" data-val="phone"></a>
+          <span class="v" data-val="contactName"></span>
+          <a href="https://www.google.com/maps/search/?api=1&query=Taverna+Racilor+Iulius+Mall+Cluj" target="_blank" rel="noopener">Taverna Racilor, Iulius Mall Cluj</a>
+        </div>
+        <div class="fsoc" aria-label="Rețele sociale"><a data-social="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="8.5" width="4.2" height="12.5"/><circle cx="4.6" cy="4.4" r="2.5"/><path d="M9.6 8.5h4v1.8c.7-1.3 2.200-2.200 4.100-2.200 3.800 0 4.500 2.500 4.500 5.700V21h-4.200v-6.200c0-1.500-.1-3.100-1.900-3.100s-2.300 1.300-2.300 3V21H9.600z"/></svg></a><a data-social="instagram" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 1.500h9A6 6 0 0 1 22.500 7.500v9a6 6 0 0 1-6 6h-9a6 6 0 0 1-6-6v-9a6 6 0 0 1 6-6zm0 2.200a3.800 3.800 0 0 0-3.800 3.800v9a3.800 3.800 0 0 0 3.800 3.800h9a3.800 3.800 0 0 0 3.800-3.800v-9a3.800 3.800 0 0 0-3.800-3.800zM12 6.800a5.200 5.200 0 1 1 0 10.400 5.200 5.200 0 0 1 0-10.400zm0 2.200a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.400-3.300a1.200 1.200 0 1 1 0 2.400 1.200 1.200 0 0 1 0-2.400z"/></svg></a><a data-social="facebook" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a><a data-social="tiktok" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a></div>
+      </div>
+    </div>
+    <p class="copy">© 2026 Taverna Racilor Cluj</p>
+  </div>
+</section>
+</main>
+
+<div class="bar" id="bar">
+  <a class="btn btn-line" data-link="tel" data-val="phone" aria-label="Sună-ne">Sună</a>
+  <a class="btn btn-light" href="#form">Solicită o ofertă</a>
+</div>
+
+<script>
+/* ============================================================
+   DE COMPLETAT: valorile de mai jos vin de la managerul restaurantului.
+   Lasă "" unde nu știi încă; pe site apare un spațiu marcat cu linie punctată.
+   ============================================================ */
+const SITE = {
+  prices: {            // lei, doar cifre, ex: 189
+    clasic: "", platou: "", boil: "",
+    soft: "", vinbere: "", complet: ""
+  },
+  minGuests: "",       // număr minim de participanți
+  groupCap: "",        // capacitatea zonei pentru grupuri
+  minVouchers: "",     // comandă minimă vouchere
+  contactName: "",
+  links: {             // unde duce „Explorează” la fiecare tip de eveniment
+    corporate: "#pachete",   // oferta cu pachete (de pe această pagină sau o pagină separată)
+    private: "", weddings: ""  // gol = deschide formularul de ofertă
+  },
+  social: {            // linkurile rețelelor sociale
+    linkedin: "", facebook: "", tiktok: "",
+    instagram: "https://www.instagram.com/tavernaracilor.cluj"
+  },
+  phone: "",           // ex: "+40 7xx xxx xxx"
+  email: "contact@tavernaracilorcluj.ro",
+  formEndpoint: ""     // opțional: URL de formular (Formspree etc.). Gol = se deschide e-mailul
+};
+
+document.documentElement.classList.add("js");
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+
+/* fill values */
+const ph=(el,txt)=>{el.textContent=txt;el.classList.add("ph")};
+$$("[data-price]").forEach(el=>{const v=SITE.prices[el.dataset.price];v?el.textContent=v+" lei":ph(el,"… lei")});
+$$("[data-val]").forEach(el=>{const k=el.dataset.val,v=SITE[k];
+  if(v){el.textContent=v}else if(el.tagName!=="A"&&!el.closest(".bar")){ph(el,"de completat")}
+});
+$$("[data-link]").forEach(el=>{
+  const k=el.dataset.val,v=SITE[k];
+  if(!v){ if(el.closest(".bar")){el.remove()} else {ph(el,"de completat")} return}
+  el.href=(el.dataset.link==="tel"?"tel:"+v.replace(/[^\d+]/g,""):"mailto:"+v);
+  if(!el.closest(".bar"))el.textContent=v;
+});
+
+$$("[data-go]").forEach(a=>{a.href=SITE.links[a.dataset.go]||"#form"});
+
+/* header, menu, mobile bar */
+const header=$("#top"),bar=$("#bar"),hero=$("#hero"),burger=$("#burger"),menu=$("#menu");
+const onScroll=()=>{const y=scrollY;header.classList.toggle("compact",y>40);bar.classList.toggle("on",y>hero.offsetHeight*.6)};
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+const setMenu=o=>{menu.classList.toggle("open",o);burger.setAttribute("aria-expanded",o);document.body.style.overflow=o?"hidden":"";if(o)header.classList.remove("compact")};
+burger.addEventListener("click",()=>setMenu(!menu.classList.contains("open")));
+menu.addEventListener("click",e=>{if(e.target.closest("a"))setMenu(false)});
+addEventListener("keydown",e=>{if(e.key==="Escape"&&menu.classList.contains("open")){setMenu(false);burger.focus()}});
+$$("[data-social]").forEach(a=>{const u=SITE.social[a.dataset.social];u?a.href=u:a.classList.add("off")});
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+$$(".rv").forEach(el=>io.observe(el));
+
+/* videos: play only while visible, hide if file missing */
+$$("video[data-lazy]").forEach(v=>{
+  v.addEventListener("loadeddata",()=>v.classList.add("ready"));
+  new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){v.preload="auto";v.play().catch(()=>{})}else v.pause();
+  }),{threshold:.35}).observe(v);
+});
+
+/* package buttons preselect the form */
+$$("[data-pack]").forEach(a=>a.addEventListener("click",()=>{$("#pack").value=a.dataset.pack}));
+
+/* form */
+const form=$("#enquiry"),status=$("#status");
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  const bad=$$("[required]",form).find(i=>!i.value.trim());
+  if(bad){status.textContent="Vă rugăm completați toate câmpurile obligatorii.";bad.focus();return}
+  const d=Object.fromEntries(new FormData(form));
+  const body=`Companie: ${d.company}\nPersoană de contact: ${d.person}\nE-mail / telefon: ${d.contact}\nData preferată: ${d.date}\nNumăr aproximativ de invitați: ${d.guests}\nPachet: ${d.pack||"nedecis"}`;
+  if(SITE.formEndpoint){
+    try{
+      const r=await fetch(SITE.formEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)});
+      if(!r.ok)throw 0;status.textContent="Mulțumim! Revenim cu propunerea în cel mai scurt timp.";form.reset();
+    }catch(_){status.textContent="Nu am putut trimite cererea. Vă rugăm încercați din nou sau contactați-ne direct."}
+  }else if(SITE.email){
+    location.href=`mailto:${SITE.email}?subject=${encodeURIComponent("Cerere ofertă eveniment de firmă – "+d.company)}&body=${encodeURIComponent(body)}`;
+    status.textContent="Se deschide aplicația de e-mail cu cererea completată.";
+  }else{
+    status.textContent="Formularul nu este încă conectat. Completați SITE.email sau SITE.formEndpoint.";
+  }
+});
+</script>
+</body>
+</html>
