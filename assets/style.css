@@ -649,3 +649,8 @@ a.ocard:hover img{transform:scale(1.04)}
 .bk-form input:focus,.bk-form textarea:focus{outline:none;border-color:#1B3A66;box-shadow:0 0 0 4px rgba(242,179,61,.5)}
 .bk-form .btn{margin-top:18px;min-height:52px;width:100%}
 .bk-form .status{color:#1B3A66}
+
+/* butoane card eveniment: text mai mic, mai natural */
+.ev .link{font-size:13px;text-transform:none;letter-spacing:.01em;gap:10px}
+.ev .link::after{width:34px}
+@media(max-width:600px){.ev .link{font-size:12px}.ev .link::after{width:28px}}
