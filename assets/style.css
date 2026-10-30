@@ -654,11 +654,3 @@ a.ocard:hover img{transform:scale(1.04)}
 .ev .link{font-size:13px;text-transform:none;letter-spacing:.01em;gap:10px}
 .ev .link::after{width:34px}
 @media(max-width:600px){.ev .link{font-size:12px}.ev .link::after{width:28px}}
-
-/* meniuri: carduri subțiri, premium (ca London Kitchen) */
-.mtile{background:var(--plum)}
-.mtile figure{aspect-ratio:4.4/1}
-.mtile .mlabel{padding:9px 8px 8px;font-size:17px;line-height:1;letter-spacing:.03em;background:var(--plum)}
-.mgrid{gap:12px}
-@media(min-width:640px) and (max-width:1099px){.mtile figure{aspect-ratio:3.4/1}}
-@media(min-width:1100px){.mtile figure{aspect-ratio:1/.8}.mtile .mlabel{padding:11px 6px 10px;font-size:18px}}
